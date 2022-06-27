@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="banner">
+        <div>
+            <h1>Spark Learn Tutoring</h1>
+            <span id="address"></span>
+        </div>
+    </div>
+
+    <!-- FORM 1 -->
+    <div class="form-box">
+        <div id="form-box-inner">
+            <div>
+                <div><img id="form-icon" src="assets/img/formicon.svg"></div>
+                <div id="form-content">
+                    <h3>Who needs Spark Learn Tutoring tutoring?</h3>
+                    <div id="form-options">
+                        <button class="btn-off btn iDoBtn">I do</button>
+                        <button class="btn-off btn MyChildBtn">My Child</button>
+                        <button class="btn-off btn SomeoneElseBtn">Someone Else</button>
+                    </div>
+                    <button id="continue-button">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM 2 -->
+
+    <footer></footer>
+
+    
+    <script src="script.js"></script>
+    <script>
+        let region = geoplugin_region();
+        let countryCode = geoplugin_countryCode();
+        const address = document.querySelector('#address');
+        if (region && countryCode) {address.textContent = 'in ' + region + ', ' + countryCode;}
+    </script>
+    
+    
+
+</body>
+</html>

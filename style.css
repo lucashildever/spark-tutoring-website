@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;500;600;700;900&display=swap');
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+
+#banner {
+    background-image: url('assets/img/banner.png');
+    height: 40vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 4%;
+}
+
+#banner div h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+
+    color: white;
+}
+
+#banner div span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 210%;
+    color: white;
+
+}
+
+#banner div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FORM 1 */
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: translateY(-5vh);
+    margin-bottom: 7vh;
+}
+
+#form-box-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+
+    box-shadow: 0px 10px 25px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 40vw;
+
+}
+
+
+.form-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-icon {
+    height: 100px;
+
+    transform: translateY(-50%);
+}
+
+#form-content {
+    transform: translateY(-16%);
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    color: #16163F;
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#form-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#form-options button:hover {
+    background-color: #262653;
+    color: white;
+}
+
+#form-options button:active {
+    background-color: #3c3c7a;
+}
+
+#continue-button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 90%;
+    color: #ffffff;
+
+    width: 10vw;
+    height: 7vh;
+    border-radius: 50px;
+    border: none;
+
+    cursor: pointer;
+
+    background: linear-gradient(270deg, #151541 2.32%, #16163F 38.26%, #3E3E94 111.3%);
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.25);
+    transition: 0.2s;
+}
+
+#continue-button:hover {
+    background: linear-gradient(270deg, #3E3E94  2.32%, #16163F 38.26%, #151541 111.3%);
+}
+
+#continue-button:active {
+    background: linear-gradient(270deg, #16163F   2.32%, #3E3E94  38.26%, #151541 111.3%);
+}
+
+/* BTN EVENTS */
+
+.btn-off {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90%;
+    color: #16163F;
+    
+    width: 27vw;
+    height: 7vh;
+    margin-bottom: 10%;
+    border-radius: 50px;
+    border: 1px solid #16163F;
+
+    cursor: pointer;
+    transition:  0.2s;
+}
+
+.btn-on {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90%;
+    color: white;
+    
+    width: 27vw;
+    height: 7vh;
+    margin-bottom: 10%;
+    border-radius: 50px;
+    border: 1px solid #16163F;
+    background-color: #16163F;
+
+    cursor: pointer;
+    transition:  0.2s;
+}
+
+
+/* FORM 2 */
+
+
+
+/* FOOTER */
+footer {
+    background-image: url('assets/img/footer.png');
+    height: 25vh;
+
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1024px) {
+    #form-box-inner {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #form-box-inner {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    h3 {
+        font-size: 100%;
+    }
+    #form-options button {
+        font-size: 85%;
+    }
+    #continue-button {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #form-box-inner {
+        width: 55vw;
+    }
+    #continue-button {
+        width: 15vw;
+    }
+    #form-options button {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #form-box-inner {
+        width: 60vw;
+    }
+    #form-icon {
+        height: 80px;
+    }    
+}
+
+@media screen and (max-width: 630px) {
+    #form-box-inner {
+        width: 65vw;
+    }
+    h3 {
+        font-size: 90%;
+    }
+    #form-options button {
+        width: 38vw;
+    }
+    #continue-button {
+        width: 20vw;
+    }
+
+}
+
+@media screen and (max-width: 515px) {
+    #form-box-inner {
+        width: 75vw;
+    }
+    h3 {
+        width: 45vw;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #form-options button {
+        width: 40vw;
+    }
+    #continue-button {
+        width: 22vw;
+    }
+    h1, #banner div span {
+        font-size: 130%;
+        transform: translateY(5vh);
+    }
+}
